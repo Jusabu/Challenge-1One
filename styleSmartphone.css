@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/* Smartphones (portrait) */
+    @media only screen and (max-width: 450px) {
+
+        :root {
+    
+       
+            --color-primario: #0A3871;
+            --color-secundario: white;
+            --color-terciario: #D8DFE8;
+            --color-cuatro: #495057;
+        }
+        
+        * {
+            background: #e5e5e5;
+            font-family: inter;
+            font-weight: 400;
+            line-height: 150%;
+        
+        }
+        
+        
+        main {
+            display: flex;
+            margin-bottom : 50px;
+            margin-left: 5vw;
+            flex-direction: column;
+        }
+        .texto_usuario {
+            
+            font-size: calc(32px + 1vw);
+            color: var(--color-primario);
+            border: none;
+            resize: none;
+            width: 95%;
+            height: 100%;
+            
+        }
+        
+        ::placeholder{color: var(--color-primario)}
+        .texto_usuario:focus{
+            outline: none;
+        }
+        
+        .imagen_logo {
+            
+            margin-top: 3vh;
+            width: 120px;
+            height: 48px;
+        }
+            
+        .icono {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .texto_transformado{
+            background-color: transparent;
+            border: none;
+            color: var(--color-primario);
+            width: 90%;
+            margin-top: 5%;
+            height: 60%;
+            resize: none;
+            font-size: calc(16px + 1vw);
+        }
+        .texto_transformado:focus{
+            outline: none;
+        }
+        
+        
+        
+        
+        .botones {
+            margin-top: 18px;
+            display: flex; 
+            flex-direction: column; 
+            flex-wrap: wrap; 
+        }
+        
+        .boton_desencriptar {
+        background-color: var(--color-terciario);
+        border: 1px solid var(--color-primario);
+        border-radius: 24px;
+        color: var(--color-primario);
+        cursor: pointer;
+        height: 8vh;
+        font-size: calc(16px + 1vw);
+        margin-right: 5vw;
+        margin-top: 1vh;
+        }
+        
+        .boton_desencriptar:active {
+            background-color: var(--color-primario) !important;
+            color: var(--color-secundario) !important;
+        }        
+        
+        
+        .boton_encriptar {
+            background-color: var(  --color-primario);
+            border: 1px solid var(--color-primario);
+            border-radius: 24px;
+            color: var(--color-secundario);
+            cursor: pointer;
+            height: 8vh;
+            margin-right: 5vw;
+            font-size: calc(16px + 1vw);
+        }
+        
+        
+        
+        
+        .boton_encriptar:active {
+            color: var(--color-primario) !important;
+            background-color: var(--color-terciario) !important;
+        
+        }       
+        
+        .boton_copiar {
+                border: 1px solid var(--color-primario);
+                border-radius: 24px;
+                color: var(--color-primario);
+                background-color: var(--color-terciario);
+                cursor: pointer;
+                height: 20%;
+                width: 95%;
+                font-size: calc(16px + 1vw);       
+                position: absolute;
+                bottom: 0;  
+                left: 50%; 
+                transform: translate(-50%, -25%);
+                visibility: hidden;
+                
+                }
+        
+        
+        .boton_copiar:active {
+            background-color: var(--color-primario) !important;
+            color: var(--color-secundario) !important;
+            
+        }        
+        
+        
+            .informacion {
+                color: var(--color-cuatro);
+                font-size: calc(18px + 1vw);
+            }
+        
+        
+        
+            .footer {
+                font-size: calc(8px + 1vw);
+                color: var(--color-cuatro);
+                background-color: var(--color-primario);
+                text-align: center;
+            }
+        
+        
+            #divCopiar {
+                background-color:var(--color-secundario);
+                border-radius: 24px;
+                margin-right: 5vw;
+                height: 25vh;
+                text-align: center;
+                position: relative;
+                margin-top: 5vh;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+    
+        
+            #section1 {
+                margin-top: 1vh; 
+                margin-bottom: 0;
+        
+            }
+        
+            #divArea {
+                max-width: 100%;
+                height: 40vh;
+        
+            }
+        
+            #divTexto {
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+                display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+            }
+        
+            #divTexto p {
+                
+                font-size: calc(8px + 1vw);
+                background-color: transparent;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: var(--color-cuatro)
+                
+            }
+        
+            #divTexto h2 {
+                font-weight: 700;
+                font-size: calc(16px + 1vw);
+                background-color: transparent;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #343A40;             
+            }
+    }
+
+
+
+
+

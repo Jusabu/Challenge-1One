@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styleLaptop.css">
+    <link rel="stylesheet" href="styleSmartphone.css">
+    <link rel="stylesheet" href="styleTablet.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <img src="Logo.png" class="imagen_logo" alt="Logo de Alura">
+    </header>
+    <main>
+        <section id="section1">
+            <div id="divArea">
+                <textarea
+                    oninput="let p = this.selectionStart; this.value = this.value.toLowerCase();this.setSelectionRange(p, p);"
+                    type="text" id="texto_escrito_usuario" placeholder="Ingrese el texto aqui" ,
+                    class="texto_usuario"></textarea>
+            </div>
+
+            <div>
+                <div>
+                    <h1 class="informacion"> <img src="zondicons--exclamation-solid.png" class="icono"> Solo letras
+                        minisculas sin acentos </h1>
+                </div>
+                <div class="botones">
+                    <button onclick="boton_encriptar()" class="boton_encriptar">Encriptar</button>
+                    <button onclick="boton_desencriptar()" class="boton_desencriptar">Descifrar</button>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <div id="divCopiar">
+                <textarea readonly id="texto_mensaje" type="text" class="texto_transformado" cols="20"
+                    rows="10"> </textarea>
+                <div id="divTexto">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button onclick="copiar_texto()" class="boton_copiar" id="but_copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Hector Julián Sanchez - 2024 </p>
+    </footer>
+</body>
+
+<script src="/app.js"></script>
+
+</html>
